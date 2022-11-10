@@ -12,7 +12,7 @@ app.get('/',(req,res)=>{
     res.send('API RUNNING');
    })
    
-app.use('/api/analyse',require('./routes/api/analyse')); 
+// app.use('/api/analyse',require('./routes/api/analyse')); 
 app.use('/api/calcCarbon',require('./routes/api/calcCarbon')); 
 app.use('/api/compare',require('./routes/api/compare')); 
 
