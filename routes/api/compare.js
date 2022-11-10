@@ -36,8 +36,8 @@ var program1 = {
     const res2 = await axios.post('https://api.jdoodle.com/v1/execute',program1, config);
 var data1=res1.data;
 var data2=res2.data;
-    const energy1 = (data1.cpuTime * (4 * 12 + 8 * 0.3725) * 1.67 * 708.2) / 1000;
-    const energy2 = (data2.cpuTime * (4 * 12 + 8 * 0.3725) * 1.67 * 708.2) / 1000;
+    const energy1 = (data1.cpuTime * (4 * 12 + 8 * 0.3725) * 1.67 * 708.2); // divide by thousand
+    const energy2 = (data2.cpuTime * (4 * 12 + 8 * 0.3725) * 1.67 * 708.2) ; // divide by thousand
  var ratio=energy1/energy2;
 
     //  var ratio=res1.data.cpuTime*res1.data.memory/(res2.data.cpuTime*res2.data.memory);
